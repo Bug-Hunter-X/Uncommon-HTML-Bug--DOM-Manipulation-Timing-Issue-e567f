@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("myDiv").innerHTML = "This text should replace the previous text.";
+    });
+  </script>
+</body>
+</html>
